@@ -123,6 +123,15 @@
       alert (names.toString()); // displays Grace,Charles,Ada,Linus
       */
 
+      var startsWithA = function(value) {
+return value.substring(0,1).toLowerCase() ===  'a';
+};
+var names= ["Grace", "Charles", "Ada", 'Alan', 'Linus'];
+var all= names.every(startsWithA);
+var some= names.some(startsWithA);
+console.log(some);
+console.log(all);
+
     </script>
   </body>
 </html>
